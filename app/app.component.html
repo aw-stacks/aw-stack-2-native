@@ -1,5 +1,44 @@
-<StackLayout class="p-20">
-    <Label text="Tap the button" class="h1 text-center"></Label>
-    <Button text="TAP" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
-    <Label [text]="message" class="h2 text-center" textWrap="true"></Label>
-</StackLayout>
+<Page>
+ <TabView>
+   <TabView.items>
+     <TabViewItem title="Sign In">
+       <TabViewItem.view>
+         <StackLayout class="form">
+           <StackLayout class="input-field">
+             <Label class="label" text="Username"></Label>
+             <TextField class="input"></TextField>
+           </StackLayout>
+           <StackLayout class="input-field">
+             <Label class="label" text="Password"></Label>
+             <TextField class="input"></TextField>
+           </StackLayout>
+           <StackLayout class="button-field">
+             <Button class="signin">Sign In</Button>
+           </StackLayout>
+         </StackLayout>
+       </TabViewItem.view>
+     </TabViewItem>
+     <TabViewItem title="Sign Up">
+       <TabViewItem.view>
+         <StackLayout class="form">
+           <StackLayout class="input-field">
+             <Label class="label" text="Email"></Label>
+             <TextField class="input-email"></TextField>
+           </StackLayout>
+           <StackLayout class="input-field">
+             <Label class="label" text="Username"></Label>
+             <TextField class="input-username"></TextField>
+           </StackLayout>
+           <StackLayout class="input-field">
+             <Label class="label" text="Password"></Label>
+             <TextField class="input-password"></TextField>
+           </StackLayout>
+           <StackLayout class="button-field">
+             <Button class="signin">Sign In</Button>
+           </StackLayout>
+         </StackLayout>
+       </TabViewItem.view>
+     </TabViewItem>
+   </TabView.items>
+ </TabView>
+</Page>
