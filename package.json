@@ -12,9 +12,11 @@
   "scripts": {
     "start:droid": "tns run android --emulator",
     "start:live:droid": "tns livesync android --emulator --watch",
+    "clean:droid": "rimraf platforms/android",
     "lint:all": "npm run lint:web && npm run lint:droid",
     "lint:droid": "tslint -c tslint.json 'app/**/*.ts'",
-    "test:droid": "tns test android --emulator"
+    "test:droid": "tns test android --emulator",
+    "debug:droid": "tns debug android --debug-brk --log trace"
   },
   "dependencies": {
     "@angular/common": "2.1.2",
