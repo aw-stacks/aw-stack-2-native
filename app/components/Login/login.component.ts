@@ -6,7 +6,7 @@ import { TextField } from "ui/text-field";
 
 @Component({
   selector: "aw-login",
-  templateUrl: "login.component.html"
+  templateUrl: "components/Login/login.component.html"
 })
 export class LoginComponent {
 
