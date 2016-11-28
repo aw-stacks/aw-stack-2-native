@@ -10,13 +10,15 @@
     }
   },
   "scripts": {
+    "add:droid": "npm run clean:droid && tns platform add android",
     "start:droid": "tns run android --emulator",
     "start:live:droid": "tns livesync android --emulator --watch",
     "clean:droid": "rimraf platforms/android",
     "lint:all": "npm run lint:web && npm run lint:droid",
     "lint:droid": "tslint -c tslint.json 'app/**/*.ts'",
     "test:droid": "tns test android --emulator",
-    "debug:droid": "tns debug android --debug-brk --log trace"
+    "debug:droid": "tns debug android --debug-brk --log trace",
+    "bundle:droid": "tns prepare android --bundle"
   },
   "dependencies": {
     "@angular/common": "2.1.2",
