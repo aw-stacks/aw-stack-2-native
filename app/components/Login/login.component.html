@@ -1,11 +1,11 @@
-<GridLayout class="login-container">
-  <StackLayout>
-    <Label class="label-username" text="Username"></Label>
-    <TextField class="input-username" hint="Enter your username" returnKeyType="next"></TextField>
+<GridLayout>
+  <StackLayout #initialContainer class="initial-container">
+
   </StackLayout>
-  <StackLayout>
-    <Label class="label-password" text="Password"></Label>
-    <TextField class="input-password" hint="Enter your password"></TextField>
+  <StackLayout #mainContainer class="main-container">
+    <GridLayout #formContainer class="form-controls" rows="auto, auto">
+      
+    </GridLayout>
+    <Button class="sign-in-action" (tap)="onSignIn()">Sign In</Button>
   </StackLayout>
-  <Button class="action-signin" (tap)="signin()">Sign In</Button>
 </GridLayout>
