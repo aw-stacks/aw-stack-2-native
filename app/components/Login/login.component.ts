@@ -1,9 +1,13 @@
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 
+import { TextField } from "ui/text-field";
+import { Button } from "ui/button";
+
 @Component({
   selector: "aw-login",
-  templateUrl: "components/Login/login.component.html"
+  templateUrl: "components/Login/login.component.html",
+  styleUrls: ["components/Login/login.component.css"]
 })
 export class LoginComponent implements OnInit {
 

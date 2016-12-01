@@ -1,11 +1,20 @@
-<GridLayout>
-  <StackLayout #initialContainer class="initial-container">
-
+<GridLayout rows="auto, auto">
+  <StackLayout row="0" #initialContainer>
+    <Image src="~/components/Login/nodemyadmin_logo.png" stretch ="none" class="brand-logo"></Image>
   </StackLayout>
-  <StackLayout #mainContainer class="main-container">
+  <StackLayout row="1" #mainContainer class="main-container">
     <GridLayout #formContainer class="form-controls" rows="auto, auto">
-      
+      <TextField row="0"
+        hint="Username"
+        returnKeyType="next"></TextField>
+      <TextField row="1"
+        hint="Password"
+        secure="true"
+        returnKeyType="done"
+        (returnPress)="onSignIn()"
+        ></TextField>
     </GridLayout>
-    <Button class="sign-in-action" (tap)="onSignIn()">Sign In</Button>
+    <Button class="btn btn-primary sign-in-action" (tap)="onSignIn()">Sign In</Button>
+    <Button class="btn btn-default" [nsRouterLink]="['/about']">About Us</Button>
   </StackLayout>
 </GridLayout>
