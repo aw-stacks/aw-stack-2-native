@@ -14,7 +14,11 @@
         (returnPress)="onSignIn()"
         ></TextField>
     </GridLayout>
-    <Button class="btn btn-primary sign-in-action" (tap)="onSignIn()">Sign In</Button>
-    <Button class="btn btn-default" [nsRouterLink]="['/about']">About Us</Button>
+
+    <Button text="Sign In" class="btn btn-primary sign-in-action" (tap)="onSignIn()"></Button>
+
+    <StackLayout class="nav">
+      <Button text="About Us" [nsRouterLink]="['/about']"></Button>
+    </StackLayout>
   </StackLayout>
 </GridLayout>
