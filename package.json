@@ -11,7 +11,7 @@
   },
   "main": "app/main.js",
   "scripts": {
-    "add:droid": "npm run clean:droid && tns platform add android",
+    "add:droid": "tns platform add android",
     "start:droid": "tns run android --emulator",
     "start:live:droid": "tns livesync android --emulator --watch",
     "start:device:droid": "tns device run",
